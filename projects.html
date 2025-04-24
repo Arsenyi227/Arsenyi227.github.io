@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио Группы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .event-card {
+            transition: transform 0.2s ease-in-out;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card h3 {
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .event-card h3:hover {
+            text-decoration: underline;
+        }
+
+        .event-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-card {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .event-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Портфолио Нашей Группы</h1>
+        <p><i class="fas fa-users"></i> Добро пожаловать на сайт нашей замечательной группы!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="members.html"><i class="fas fa-users"></i> Список группы</a></li>
+            <li><a href="birthdays.html"><i class="fas fa-birthday-cake"></i> Дни рождения</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Мероприятия</a></li>
+            <li><a href="schedule.html"><i class="fas fa-clock"></i> Расписание</a></li>
+            <li><a href="projects.html"><i class="fas fa-folder-open"></i> Проекты</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="projects-page">
+            <h2><i class="fas fa-folder-open"></i> Проекты</h2>
+            <p>Здесь вы найдете информацию о проектах, над которыми работает наша группа.</p>
+
+            <div class="event-list">
+                <div class="event-card">
+                    <a href="project1.html">
+                        <h3><i class="fas fa-code"></i> Разработка веб-приложения "Электронный журнал"</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата начала: 10 января 2025</p>
+                    <p><i class="fas fa-users"></i> Участники: Абдурахман Н., Бекболатов Р., Ким Р.</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Разработка веб-приложения для удобного учета успеваемости студентов и посещаемости занятий.</p>
+                    <p><i class="fas fa-flask"></i> Статус: В разработке</p>
+                </div>
+                <div class="event-card">
+                    <a href="project2.html">
+                        <h3><i class="fas fa-robot"></i> Создание чат-бота для помощи студентам</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата начала: 15 февраля 2025</p>
+                    <p><i class="fas fa-users"></i> Участники: Ильичев Д., Казначеев К., Куанышбек А.</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Разработка чат-бота, который сможет отвечать на вопросы студентов о расписании, преподавателях и других аспектах учебного процесса.</p>
+                    <p><i class="fas fa-flask"></i> Статус: В разработке</p>
+                </div>
+                <div class="event-card">
+                    <a href="project3.html">
+                        <h3><i class="fas fa-paint-brush"></i> Разработка дизайн-проекта "Интерьер колледжа"</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата начала: 01 марта 2025</p>
+                    <p><i class="fas fa-users"></i> Участники: Мукашева М., Жұматай Р., Берікбек А.</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Разработка дизайн-проекта по оформлению интерьера колледжа с учетом современных тенденций и пожеланий студентов.</p>
+                    <p><i class="fas fa-flask"></i> Статус: Завершен</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Портфолио Нашей Группы</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия - Портфолио Группы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .event-card {
+            transition: transform 0.2s ease-in-out;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 20px; /* Добавляем отступ снизу для вертикального расположения */
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card h3 {
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .event-card h3:hover {
+            text-decoration: underline;
+        }
+
+        .event-list {
+            display: flex;
+            flex-direction: column; /* Изменяем направление на столбец */
+        }
+
+        .event-card {
+            width: 100%; /* Устанавливаем ширину 100%, чтобы карточки занимали всю доступную ширину */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .event-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Портфолио Нашей Группы</h1>
+        <p><i class="fas fa-users"></i> Добро пожаловать на сайт нашей замечательной группы!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="members.html"><i class="fas fa-users"></i> Список группы</a></li>
+            <li><a href="birthdays.html"><i class="fas fa-birthday-cake"></i> Дни рождения</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Мероприятия</a></li>
+            <li><a href="schedule.html"><i class="fas fa-clock"></i> Расписание</a></li>
+            <li><a href="projects.html"><i class="fas fa-folder-open"></i> Проекты</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="events-page">
+            <h2><i class="fas fa-calendar-alt"></i> Мероприятия</h2>
+            <p>Здесь вы найдете информацию о предстоящих и прошедших мероприятиях нашей группы.</p>
+
+            <div class="event-list">
+                <div class="event-card">
+                    <a href="event1.html">
+                        <h3><i class="fas fa-birthday-cake"></i> День рождения группы</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата: 15 мая 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Место: Актовый зал колледжа</p>
+                    <p><i class="fas fa-users"></i> Участники: Все студенты группы</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Праздничное мероприятие, посвященное дню рождения нашей группы. Будут конкурсы, поздравления и праздничный торт!</p>
+                </div>
+                <div class="event-card">
+                    <a href="event2.html">
+                        <h3><i class="fas fa-graduation-cap"></i> Выпускной вечер</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата: 20 июня 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Место: Ресторан "Арабика"</p>
+                    <p><i class="fas fa-users"></i> Участники: Выпускники группы и преподаватели</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Торжественное мероприятие, посвященное окончанию обучения в колледже. В программе вручение дипломов, праздничный ужин и развлекательная программа.</p>
+                </div>
+                <div class="event-card">
+                    <a href="event3.html">
+                        <h3><i class="fas fa-paint-brush"></i> Конкурс стенгазет</h3>
+                    </a>
+                    <p><i class="fas fa-calendar-day"></i> Дата: 10 марта 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Место: Коридор 2 этажа</p>
+                    <p><i class="fas fa-users"></i> Участники: Студенты группы</p>
+                    <p><i class="fas fa-info-circle"></i> Описание: Конкурс на лучшую стенгазету, посвященную истории группы и интересным событиям. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Портфолио Нашей Группы</p>
+    </footer>
+</body>
+</html>

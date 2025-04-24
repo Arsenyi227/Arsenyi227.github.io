@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Портфолио Группы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Портфолио Нашей Группы</h1>
+        <p><i class="fas fa-users"></i> Добро пожаловать на сайт нашей замечательной группы!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="members.html"><i class="fas fa-users"></i> Список группы</a></li>
+            <li><a href="birthdays.html"><i class="fas fa-birthday-cake"></i> Дни рождения</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Мероприятия</a></li>
+            <li><a href="schedule.html"><i class="fas fa-clock"></i> Расписание</a></li>
+            <li><a href="projects.html"><i class="fas fa-folder-open"></i> Проекты</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="contact-page">
+            <h2><i class="fas fa-envelope"></i> Контакты</h2>
+            <p>Вы можете связаться с нами по следующим контактам:</p>
+
+            <div class="contact-info">
+                <div class="contact-block">
+                    <h3><i class="fas fa-map-marker-alt"></i> Адрес:</h3>
+                    <p>Казахстан, Балхаш</p>
+                </div>
+                <div class="contact-block">
+                    <h3><i class="fas fa-phone"></i> Телефон:</h3>
+                    <p>+7 (777) 123-45-67</p>
+                </div>
+                <div class="contact-block">
+                    <h3><i class="fas fa-envelope"></i> Email:</h3>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+
+            <div class="feedback-form">
+                <h3><i class="far fa-comment-dots"></i> Форма обратной связи</h3>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Отправить сообщение</button>
+                </form>
+                <div id="message-sent" style="display: none; margin-top: 20px; color: green;">
+                    Ваше сообщение отправлено!
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Портфолио Нашей Группы</p>
+    </footer>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log('Отправлено сообщение:', { name, email, message });
+
+            document.getElementById('feedbackForm').style.display = 'none';
+            document.getElementById('message-sent').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
