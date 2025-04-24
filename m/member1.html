@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абдурахман Нұртілек Нұркенұлы - Портфолио Группы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .person-page {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .person-header {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .person-header img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .person-header h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .person-header p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .person-info {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .section-header {
+            font-size: 1.5em;
+            color: #007bff;
+            margin: 20px 0 10px 0;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .info-block {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .info-block h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .info-block p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Стили для экранов меньше 768px */
+        @media (max-width: 768px) {
+            .person-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .person-header img {
+                width: 80%;
+                max-width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .person-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Портфолий Нашей Группы</h1>
+        <p><i class="fas fa-users"></i> Добро пожаловать на сайт нашей замечательной группы!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="../members.html"><i class="fas fa-users"></i> Список группы</a></li>
+            <li><a href="../birthdays.html"><i class="fas fa-birthday-cake"></i> Дни рождения</a></li>
+            <li><a href="../events.html"><i class="fas fa-calendar-alt"></i> Мероприятия</a></li>
+            <li><a href="../schedule.html"><i class="fas fa-clock"></i> Расписание</a></li>
+            <li><a href="../projects.html"><i class="fas fa-folder-open"></i> Проекты</a></li>
+            <li><a href="../contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="person-page">
+            <div class="person-header">
+                <img src="images/1full.avif" alt="Абдурахман Нұртілек Нұркенұлы">
+                <div class="person-info">
+                    <h1>Абдурахман Нұртілек Нұркенұлы</h1>
+                    <p>Студент группы ПО-23-9</p>
+                    <p>Абдурахман - целеустремленный и ответственный студент. Обладает отличными аналитическими способностями и креативным мышлением. Легко находит общий язык с одногруппниками, всегда готов прийти на помощь.</p>
+                </div>
+            </div>
+
+            <h2 class="section-header">Базовая информация</h2>
+            <div class="info-block">
+                <p><strong>ФИО:</strong> Абдурахман Нұртілек Нұркенұлы</p>
+                <p><strong>Дата рождения:</strong> 12 июля 2008 года</p>
+                <p><strong>Школа:</strong> Школа №42</p>
+            </div>
+
+            <h2 class="section-header">Достижения</h2>
+            <div class="info-block">
+                <h3>Учебные достижения</h3>
+                <p>Призер городской олимпиады по математике (2022)</p>
+                 <p>Участник областного конкурса научных проектов (2023)</p>
+            </div>
+
+            <h2 class="section-header">Статус в группе</h2>
+            <div class="info-block">
+                <h3>Групповая деятельность</h3>
+                <p>Активный участник жизни группы</p>
+                <p>Ответственный за организацию мероприятий</p>
+            </div>
+
+            <h2 class="section-header">Проекты</h2>
+            <div class="info-block">
+                <h3>Текущие проекты</h3>
+                <p>Разработка веб-приложения для автоматизации расписания занятий</p>
+                <p>Исследование методов машинного обучения для анализа данных</p>
+            </div>
+
+
+
+            <h2 class="section-header">Интересы</h2>
+            <div class="info-block">
+                <p>Программирование, робототехника, чтение научной литературы, шахматы.</p>
+            </div>
+
+            <h2 class="section-header">Планы на будущее</h2>
+             <div class="info-block">
+                <p>Планирует развиваться в области веб-разработки и машинного обучения, участвовать в крупных IT-проектах.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Портфолио Нашей Группы</p>
+    </footer>
+</body>
+</html>
